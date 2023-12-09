@@ -1,0 +1,1 @@
+export const messageText = 'Please sign this message to login to Scopescan and confirm you are the owner of this address.'

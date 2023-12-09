@@ -1,0 +1,318 @@
+:root {
+    /* content size */
+    --sideNavBarWidth: 200rem;
+    --mainContentWidth: calc(100% - 200rem);
+    --hederHeight: 70rem;
+    --contentPadding: 30rem;
+
+    /* font size */
+
+    /* font color */
+    --homeColor: #24272D;
+    --whiteColor: #2E3138;
+    --mainFontColor: #24272D;
+    --secondaryFontColor: #574F3B;
+
+    /* header 导航栏侧边栏 头部*/
+    --headerBgColor: #1B1B1E;
+    --headerColor: #fff;
+
+    /* tabs */
+    --tabsBackground: #fff;
+    --tabsBoxShadow: #DDDDDD;
+    --tabsBoxShadowInset: #fff;
+    --tabsBorder: #F3F3F3;
+    --tabsButColor: #24272D;
+    --tabsBntActivityColor: #C89402;
+    --perrectColor: #24272D;
+    --holdingBgColor: #FFCE50;
+    --holdingColor: #515764;
+    --infoBorderColor: #fff;
+
+    /* tags */
+    --tagsBorderColor: #574F3B;
+    --tagsColor: #574F3B;
+
+    /* All time activity */
+    --allTimeActivityBoxShadow: #DFDFDF;
+    --allTimeActivityBoxShadowInset: #EEEEEE;
+    --allTimeActivityBoxBorder: #F3BA2F;
+    --sentBgColor: #4583FF;
+    --callBgColor: #F0B90A;
+    --datePickBorder: #DAE1ED;
+    --portfoiloBorder: #F3BA2F;
+    --balanceItemBorder: #F5D15F;
+
+    /* main contact interaction */
+    --mainContactInteractionBorderTopColor: #F5D15F;
+    --mainContactInteractionBorderColor: #fff;
+
+    /* table header */
+    --tableHeaderBorderBottomColor: #DAE1ED;
+    --tableHeaderColor: #748197;
+    --tableRowBgColor: #FAFAFA;
+    --tablePortRowBgColor: #fff;
+    --tablePortHeaderBgColor: #F0B90A;
+    --tablePortBorderColor: #F0B90A;
+    --tableTagColor: #C89402;
+    --watchBorder: #F0B90A;
+
+    --clusterBorderColor: #F3BA2F;
+    --cluterOverviewTableBorder: none;
+    --cluterOverviewTableColBorder: #F3BA2F;
+    --cluterBColor: #DAE1ED;
+    --cluterOverviewTablePadding: 10rem 0;
+    --cluterOverviewTableBgColor: #FFFBEC;
+    --blockHeaderBorderBottom: #DAE1ED;
+    --portfolioBgColor: #FFFBEC;
+    --poolBgColor: #DEDEDE;
+
+    /* background color */
+    --mainColor: #fff;
+    --secondaryColor: #ACB5C5;
+    --thirdColor: #fff;
+    --fourthColor: #C89402;
+    --bodyBgColor: #101015;
+    --chartBorderColor: #DAE1ED;
+    --loginButtonBgColor: #F3BA2F;
+    --sunMenuBgColor: #525865;
+    --sunMenuHoverBgColor: #464D5A;
+    --personalInfoBgColor: #1B1B1B;
+    --addIconColor: #8A96AD;
+    --radioColor: #F4D65B;
+    --borderShadowColor: #DDDDDD;
+    --ldColor: #525865;
+
+    /* constants var */
+    --sideNavBarBg: var(--mainColor);
+    --sideNavBarActiveBg: var(--thirdColor);
+    --borderColor: var(--fourthColor);
+    --sideIconColor: #8F9BB3;
+    --searchBoxBgColor: #fff;
+
+    /* modal */
+    --modalBgCOlor: #FFFFFF;
+    --modalAddressColor: #C89402;
+    --modalAddressDetailBgColor: #F4F4F4;
+    --modalItemBgColor: #F4DDA3;
+    --modelItemBorderColor: #ACB5C5;
+    --modalblobkbg: #fff;
+    --userBlockBgColor: #fff;
+    --userBlockshadow: none;
+    --searchBg: #f4f4f4;
+    --tipModalBg: rgba(29, 31, 37, .8);
+    --treeLineColoe: #979797;
+    --drawBg: #F4F4F4;
+    --mainGroupBg: #FFE8AE;
+    --childDeep: #DAE1ED;
+    --drawerTabColor: #fff;
+    --nextpagecolor: #DAE1ED;
+    --searchHeaderBg: rgba(61, 67, 79, .8);
+    --toolIconFill: #ACB5C5;
+    --notableTitle: #24272D;
+    --notableLabel: #574F3B;
+    --notableVal: #24272D;
+    --biggestItemColor: #748197;
+    --biggestBg: #fff;
+    --biggestBorder: #F5D15F;
+    --entityVitalikBg: #F0B90A;
+    --trackButBg: #FFF6DE;
+    --tarckSolid: #F3BA2F;
+    --tsHashColor: #C89402;
+    --collaspBg: #FAFAFA;
+    --collaspHeaderBorder: #DAE1ED;
+    --pagecolor: #DAE1ED;
+    --recipientBgColor: #454E5D;
+    --recipientLightBgColor: rgba(69,78,93,0.3);
+    --capitalTableBgColor: #2C3A48;
+  --capitalTableBorderColor: #202B36;
+  --progressLeftBgColor: #4AC2AB;
+  --progressRightBgColor: #E03C79;
+  --fundBgColor: #203A3C;
+  --fundBorderColor: #23B899;
+  --fundRelatedBgColor: #1B2631;
+  --downBgColor: #262830;
+  --supplyTagBgColor: #212C30;
+  --selectedTagBgColor: #2D5754;
+  --unSelectedTagBgColor: #2C2F3A;
+  --selectedTagBorderColor: #484E5A;
+  --selectedTagImgBgColor: #3F4454;
+  --tokenListBorderBg: #454C57;
+  --dashboardBg: #212B2F;
+  --dashboardTabBg: rgba(37,52,53,0.78);
+  --dashboardTabBorderBg: rgba(58,200,159,0.3);
+  --transferSendBg: #35415C;
+  --alertAddBg:#1D3739;
+  --alertPrivateColor:#398FFF;
+  --waterListAddColor:#2D313D;
+  --entityDescribeColor: #A7B0C0;
+  --entityContentBg: #2E3138;
+  --entityBtnBgColor: #385152;
+  --entityShareFontColor: #5EAADE;
+  --feeContentBg: #424651;
+  --feePriceBorderBg: #37866F;
+  --feePayBtnBg: #78EBC9;
+  --feeFooterBg: #353942;
+  --headerMessageBg: #FF3737;
+  --loginDisableBg: #ccc;
+  --loginDisableFontColor: #737B83;
+  --riskBg: rgba(255,110,118,0.15);
+  --riskMediumBg: rgba(253,221,96,0.15);
+  --riskLowBg: rgba(73,146,255,0.15);
+  --riskHighColor: #FF6E76;
+  --rightMediumColor: #FDDD60;
+  --rightLowColor: #4992FF;
+  --addressTransactionBg: #21242D;
+  --tokenHeaderUntracked: #20242B;
+  --pricingFontColor: #81FFDA;
+  
+
+    /* ------------ mabile ------------- */
+    --mobileHeaderBgColor01: #3E434E;
+    --mobileHeaderBgColor02: #464D5A;
+
+    --mobileIconColor01: #ACB5C5;
+
+    --mobileFontColor01: #fff;
+    --mobileFontColor02: #F3BA2F;
+
+    --mobileBgUrl01: url(../images/bgImg);
+
+     /* insight */
+     --child-01-color: #24272D; 
+     --child-02-color: #fff;
+     --child-03-color: #ACB5C5;
+     --child-04-color: #3AC89F;
+     --child-05-color: #3A3D4B;
+     --child-06-color: #030a03;
+     --child-07-color: #3AC69E;
+     --child-08-color: #2F313C;
+     --child-09-color: #050505;
+     --child-10-color: #4B525E;
+     --child-11-color: #323742;
+     --child-12-color: #23B899;
+     --child-13-color: #4583FF;
+     --child-14-color: #FFD302;
+     --child-15-color: #23252C;
+     --child-16-color: #F5F5F5;
+     --child-17-color: #282D37;
+     --child-18-color: #8C9BA5;
+     --child-19-color: #1D2126;
+     --child-20-color: #848A97;
+     --child-21-color: #2E3138;
+     --child-22-color: #000000;
+     --child-23-color: #2D2E36;
+     --child-24-color: #3D4050;
+     --child-25-color: #1A7F62;
+     --child-26-color: #26282F;
+     --child-27-color: #12141A;
+     --child-28-color: #2D4142;
+     --child-29-color: #323947;
+     --child-30-color: #AFB7C9;
+     --child-31-color: #1C1D20;
+     --child-32-color: #23252D;
+     --child-33-color: #59677E;
+     --child-34-color: #333;
+     --child-35-color: #385152;
+     --child-36-color: #3E434E;
+     --child-37-color: #454C57;
+     --child-38-color: #2C7D69;
+     --child-39-color: #737B83;
+     --child-40-color: #FF0000;
+     --child-41-color: #1C1E25;
+     --child-42-color: #696969;
+     --child-43-color: #2E3139;
+     --child-44-color: #1B1B1E;
+     --child-45-color: #2E303A;
+     --child-46-color: #21232A;
+     --child-47-color: #2D3138;
+     --child-48-color: #3A3E47;
+     --child-49-color: #33A384;
+     --child-50-color: #1F1F26;
+     --child-51-color: #37373D;
+     --child-52-color: #7285A4;
+     --child-53-color: #4E5461;
+     --child-54-color: #23252B;
+     --child-55-color: #233033;
+     --child-56-color: #19191D;
+     --child-57-color: #CD7C5A;
+     --child-58-color: #757678;
+     --child-59-color: #A74747;
+     --child-60-color: #25272C;
+     --child-61-color: #383C43;
+     --child-62-color: #1C1E23;
+     --child-63-color: #ffea29;
+     --child-64-color: #8d29ff;
+     --child-65-color: #1B1B1B;
+     --child-66-color: #1B3539;
+     --child-67-color: #35415C;
+     --child-68-color: #35415C;
+     --child-69-color: #CCD6DD;
+     --child-70-color: #2b7bb9;
+     --child-71-color: #42434B;
+     --child-72-color: #409469;
+     --child-73-color: #57BE89;
+     --child-74-color: #0974FD;
+     --child-75-color: #57627B;
+     --child-76-color: #1FE1AA;
+     --child-77-color: #58B79C;
+     --child-78-color: #5D9686;
+     --child-79-color: #66837A;
+     --child-80-color: #586360;
+     --child-81-color: #2B2D36;
+     --disabled-color: #ccc;
+ 
+     --header-bg: var(--child-01-color);
+     --header-login-but-bg: var(--child-04-color);
+     --menu-color: var(--child-02-color);
+     --menu-title-color: var(--child-03-color);
+     --menu-icon-color: var(--child-07-color);
+     --menu-selected-color: var( --child-07-color);
+     --menu-item-bg: var(--child-05-color);
+ 
+     --conten-info-name-color: var(--child-02-color);
+     --content-info-label-color: var(--child-03-color);
+     --content-info-active-color: var(--child-04-color);
+ 
+     --block-bg: var(--child-08-color);
+     --tab-bg: var(--child-11-color);
+ 
+     --block-border: var(--child-09-color);
+     --content-border: var(--child-10-color);
+     --item-border: var(--child-07-color);
+     --hot-border: var(--child-25-color);
+ 
+     --chart-title1-color: var(--child-12-color);
+     --chart-title2-color: var(--child-13-color);
+     --chart-title3-color: var(--child-14-color);
+     --chart-title4-color: var(--child-19-color);
+     --chart-bg-color: var(--child-23-color);
+ 
+     --table-cell-bg: var(--child-15-color);
+     --table-tr-bg: var(--child-17-color);
+     --scroll-bg: var(--child-16-color);
+     --scroll-thumb: var(--child-20-color);
+     --scroll-track: var(--child-21-color);
+     --loginDisableBg: var(--disabled-color);
+     --login-bg: var(--child-34-color);
+     --login-bg2: var(--child-38-color);
+     --logon-bg3: var(--child-39-color);
+     --pagination-item-color: var(--child-18-color);
+     --modal-bg: var(--child-35-color);
+     --progress-bg: var(--child-36-color);
+     --search-border: var(--child-37-color);
+ 
+     --tag-active-color: var(--child-22-color);
+     
+     --home-color1: var(--child-30-color);
+     --home-color2: var(--child-31-color);
+ 
+     --hone-border1: var(--child-33-color);
+ 
+     --home-item-bg: var(--child-24-color);
+     --home-bg1: var(--child-26-color);
+     --home-bg2: var(--child-27-color);
+     --home-bg3: var(--child-28-color);
+     --home-bg4: var(--child-29-color);
+     --home-bg5: var(--child-32-color);
+}

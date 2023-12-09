@@ -1,0 +1,191 @@
+// @font-face {
+//   font-family: 'Inter';
+//   src: url("/fonts/Inter-Regular-9.otf") format('otf'), url("/fonts/HDZB_28.TTF") format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Inter';
+//   src: url("/fonts/Inter-Bold-4.otf") format('otf'), url("/fonts/HDZB_28.TTF") format('truetype');
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Inter';
+//   src: url("/fonts/Inter-Regular.ttf") format('truetype'), url("/fonts/HDZB_28.TTF") format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Inter';
+//   src: url('https://s2.coinmarketcap.com/static/cloud/fonts/inter/Inter-Regular-new.woff2') format('woff2'),url('https://s2.coinmarketcap.com/static/cloud/fonts/inter/Inter-Regular-new.woff') format('woff');
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Inter';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('https://s2.coinmarketcap.com/static/cloud/fonts/inter/Inter-Medium-new.woff2') format('woff2'),url('https://s2.coinmarketcap.com/static/cloud/fonts/inter/Inter-Medium-new.woff') format('woff');
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Inter';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: url('https://s2.coinmarketcap.com/static/cloud/fonts/inter/Inter-SemiBold-new.woff2') format('woff2'),url('https://s2.coinmarketcap.com/static/cloud/fonts/inter/Inter-SemiBold-new.woff') format('woff');
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Inter';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: url('https://s2.coinmarketcap.com/static/cloud/fonts/inter/Inter-Bold-new.woff2') format('woff2'),url('https://s2.coinmarketcap.com/static/cloud/fonts/inter/Inter-Bold-new.woff') format('woff');
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Inter';
+//   font-style: normal;
+//   font-weight: 900;
+//   src: url('https://s2.coinmarketcap.com/static/cloud/fonts/inter/Inter-Black-new.woff2') format('woff2'),url('https://s2.coinmarketcap.com/static/cloud/fonts/inter/Inter-Black-new.woff') format('woff');
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter-Regular.ttf") format('truetype'), url("/fonts/HDZB_28.TTF") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter-Bold.ttf") format('truetype'), url("/fonts/HDZB_28.TTF") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+body {
+  margin: 0;
+  // font-family: 'Inter', Menlo, sans-serif, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  //   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bodyBgColor) !important;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+}
+
+/* 整个滚动条 */
+::-webkit-scrollbar { 
+  width: 0; 
+  height: 0; 
+  background-color:#F5F5F5;
+}
+/* 滚动条上的按钮 (上下箭头). */
+// ::-webkit-scrollbar-button {
+//   background-color: #2196F3;
+//   border-radius: 50rem;
+//   height: 20rem;
+//   width: 20rem;
+// }
+/* 滚动条上的滚动滑块. */
+::-webkit-scrollbar-thumb { 
+  background-color: var(--datePickBorder); 
+  border-radius: 50rem;
+}
+/*  滚动条轨道. */
+::-webkit-scrollbar-track { 
+  -webkit-box-shadow:inset 0 0 6rem rgba(0, 142, 255, 1); 
+  box-shadow:inset 0 0 6rem rgba(0, 142, 255, 1, 1); 
+  background-color:#F5F5F5; 
+}
+/* 滚动条没有滑块的轨道部分 */
+::-webkit-scrollbar-track-piece {
+  background-color: var(--tabsBackground);
+}
+/* 当同时有垂直滚动条和水平滚动条时交汇的部分. */
+::-webkit-scrollbar-corner {
+  background:transparent;
+}
+
+.timeline-Widget {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.chartHeaderBorder {
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 6rem;
+    height: 6rem;
+    border-top: 1rem solid #fff;
+    border-left: 1rem solid #fff;
+    z-index: 1;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 6rem;
+    height: 6rem;
+    border-top: 1rem solid #fff;
+    border-right: 1rem solid #fff;
+    z-index: 1;
+  }
+}
+
+.chartFooterBorder {
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 6rem;
+    height: 6rem;
+    border-bottom: 1rem solid #fff;
+    border-left: 1rem solid #fff;
+    z-index: 1;
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 6rem;
+    height: 6rem;
+    border-bottom: 1rem solid #fff;
+    border-right: 1rem solid #fff;
+    z-index: 1;
+  }
+}
+
+.grecaptcha-badge {
+  display: none !important;
+}
+
+div,p,span,a {
+  font-weight: 400;
+}
