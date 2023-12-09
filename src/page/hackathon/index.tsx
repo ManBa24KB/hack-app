@@ -646,8 +646,8 @@ const HackathonPage = () => {
     const submit = async() => {
         setLoading(true)
         const ethereum: any = window.ethereum
-        const provider = new ethers.providers.Web3Provider(ethereum)
-        const contract: any = new ethers.Contract('0x648f54f1F304B5F340fBF084F41E1CaaCa0F629c', RouterAbi, provider.getSigner())
+        const provider = new ethers.providers.Web3Provider(ethereum) // 0x648f54f1F304B5F340fBF084F41E1CaaCa0F629c
+        const contract: any = new ethers.Contract('0xC5413EEed7C698A2704BE2e5088B4BD98EAc92F5', RouterAbi, provider.getSigner())
         try {
             const transferRes = await contract.createWallet()
             if (transferRes && transferRes.hash) {

@@ -162,9 +162,12 @@ const ApprovalsTable = (props: any) => {
             key: 'amount',
             render: (val: string) => {
                 return (
+                    // <div>{ethers.BigNumber.from(val)}</div>
+                    // <div>{ethers.utils.formatEther(val + '')}</div>
+                    // <div>{ethers.utils.formatUnits(val, 'ether')}</div>
                     <div className='lastData'>
                         <ComNumberStatistic 
-                            value={parseFloat(ethers.utils.formatEther(val))}
+                            value={ethers.utils.formatEther(val + '')}
                             suffix=''
                             prefix=''
                             color='#fff'
